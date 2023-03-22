@@ -1,0 +1,813 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2489EB6329C68950008EE6DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2489EB6229C68950008EE6DF /* AppDelegate.swift */; };
+		2489EB6529C68950008EE6DF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2489EB6429C68950008EE6DF /* SceneDelegate.swift */; };
+		2489EB6729C68950008EE6DF /* StopWatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2489EB6629C68950008EE6DF /* StopWatchViewController.swift */; };
+		2489EB6C29C68952008EE6DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2489EB6B29C68952008EE6DF /* Assets.xcassets */; };
+		2489EB6F29C68952008EE6DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2489EB6D29C68952008EE6DF /* LaunchScreen.storyboard */; };
+		2489EB7A29C68953008EE6DF /* StopWatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2489EB7929C68953008EE6DF /* StopWatchTests.swift */; };
+		2489EB8429C68953008EE6DF /* StopWatchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2489EB8329C68953008EE6DF /* StopWatchUITests.swift */; };
+		2489EB8629C68953008EE6DF /* StopWatchUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2489EB8529C68953008EE6DF /* StopWatchUITestsLaunchTests.swift */; };
+		2489EB9329C68975008EE6DF /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2489EB9229C68975008EE6DF /* Coordinator.swift */; };
+		2489EB9529C68A1A008EE6DF /* TimerCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2489EB9429C68A1A008EE6DF /* TimerCoordinator.swift */; };
+		2489EB9C29C77A18008EE6DF /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2489EB9B29C77A18008EE6DF /* TimerViewController.swift */; };
+		2489EB9F29C77B07008EE6DF /* AlarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2489EB9E29C77B07008EE6DF /* AlarmViewController.swift */; };
+		2489EBA429C782D4008EE6DF /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2489EBA329C782D4008EE6DF /* TabBarViewController.swift */; };
+		2489EBA629C78F91008EE6DF /* AlarmCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2489EBA529C78F91008EE6DF /* AlarmCoordinator.swift */; };
+		2489EBA829C78FB6008EE6DF /* StopWatchCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2489EBA729C78FB6008EE6DF /* StopWatchCoordinator.swift */; };
+		2489EBAA29C7CDF0008EE6DF /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2489EBA929C7CDF0008EE6DF /* MainCoordinator.swift */; };
+		2489EBAD29C7E316008EE6DF /* AlarmViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2489EBAC29C7E316008EE6DF /* AlarmViewControllerViewModel.swift */; };
+		2489EBB029C7E335008EE6DF /* Clock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2489EBAF29C7E335008EE6DF /* Clock.swift */; };
+		2489EBB229C80313008EE6DF /* AddAlarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2489EBB129C80313008EE6DF /* AddAlarmViewController.swift */; };
+		2489EBB529C808E7008EE6DF /* AddAlarmCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2489EBB429C808E7008EE6DF /* AddAlarmCoordinator.swift */; };
+		2489EBB729C88CF1008EE6DF /* DatePickerHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2489EBB629C88CF1008EE6DF /* DatePickerHeaderView.swift */; };
+		2489EBB929C8E8CC008EE6DF /* RepeatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2489EBB829C8E8CC008EE6DF /* RepeatTableViewCell.swift */; };
+		2489EBBE29C8F8BC008EE6DF /* LabelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2489EBBD29C8F8BC008EE6DF /* LabelTableViewCell.swift */; };
+		2489EBC029C8FCEF008EE6DF /* SnoozeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2489EBBF29C8FCEF008EE6DF /* SnoozeTableViewCell.swift */; };
+		2489EBC329C931AE008EE6DF /* LapTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2489EBC229C931AE008EE6DF /* LapTableViewCell.swift */; };
+		2489EBC529C93692008EE6DF /* StopWatchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2489EBC429C93692008EE6DF /* StopWatchViewModel.swift */; };
+		24D5D4B929C97FE000C495B8 /* StopWatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D5D4B829C97FE000C495B8 /* StopWatch.swift */; };
+		24D5D4BE29CA27A100C495B8 /* AlarmTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D5D4BD29CA27A100C495B8 /* AlarmTableViewCell.swift */; };
+		24D5D4C029CA3BF100C495B8 /* AddEditAlarmViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D5D4BF29CA3BF100C495B8 /* AddEditAlarmViewModel.swift */; };
+		24D5D4C329CA499000C495B8 /* RepeatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D5D4C229CA499000C495B8 /* RepeatViewController.swift */; };
+		24D5D4C529CA4D9B00C495B8 /* LabelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D5D4C429CA4D9B00C495B8 /* LabelViewController.swift */; };
+		24D5D4C729CA4DAD00C495B8 /* SoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D5D4C629CA4DAD00C495B8 /* SoundViewController.swift */; };
+		24D5D4CB29CA693B00C495B8 /* RepeatViewControllerCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D5D4CA29CA693B00C495B8 /* RepeatViewControllerCoordinator.swift */; };
+		24D5D4CD29CA694D00C495B8 /* LabelViewControllerCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D5D4CC29CA694D00C495B8 /* LabelViewControllerCoordinator.swift */; };
+		24D5D4CF29CA695A00C495B8 /* SoundViewControllerCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D5D4CE29CA695A00C495B8 /* SoundViewControllerCoordinator.swift */; };
+		24D5D4D129CB2CF300C495B8 /* TimerViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D5D4D029CB2CF300C495B8 /* TimerViewControllerViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2489EB7629C68953008EE6DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2489EB5729C68950008EE6DF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2489EB5E29C68950008EE6DF;
+			remoteInfo = StopWatch;
+		};
+		2489EB8029C68953008EE6DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2489EB5729C68950008EE6DF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2489EB5E29C68950008EE6DF;
+			remoteInfo = StopWatch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2489EB5F29C68950008EE6DF /* StopWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StopWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2489EB6229C68950008EE6DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2489EB6429C68950008EE6DF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		2489EB6629C68950008EE6DF /* StopWatchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopWatchViewController.swift; sourceTree = "<group>"; };
+		2489EB6B29C68952008EE6DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2489EB6E29C68952008EE6DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2489EB7029C68952008EE6DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2489EB7529C68953008EE6DF /* StopWatchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StopWatchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2489EB7929C68953008EE6DF /* StopWatchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopWatchTests.swift; sourceTree = "<group>"; };
+		2489EB7F29C68953008EE6DF /* StopWatchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StopWatchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2489EB8329C68953008EE6DF /* StopWatchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopWatchUITests.swift; sourceTree = "<group>"; };
+		2489EB8529C68953008EE6DF /* StopWatchUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopWatchUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2489EB9229C68975008EE6DF /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		2489EB9429C68A1A008EE6DF /* TimerCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerCoordinator.swift; sourceTree = "<group>"; };
+		2489EB9B29C77A18008EE6DF /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
+		2489EB9E29C77B07008EE6DF /* AlarmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmViewController.swift; sourceTree = "<group>"; };
+		2489EBA329C782D4008EE6DF /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		2489EBA529C78F91008EE6DF /* AlarmCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmCoordinator.swift; sourceTree = "<group>"; };
+		2489EBA729C78FB6008EE6DF /* StopWatchCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopWatchCoordinator.swift; sourceTree = "<group>"; };
+		2489EBA929C7CDF0008EE6DF /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		2489EBAC29C7E316008EE6DF /* AlarmViewControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmViewControllerViewModel.swift; sourceTree = "<group>"; };
+		2489EBAF29C7E335008EE6DF /* Clock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clock.swift; sourceTree = "<group>"; };
+		2489EBB129C80313008EE6DF /* AddAlarmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAlarmViewController.swift; sourceTree = "<group>"; };
+		2489EBB429C808E7008EE6DF /* AddAlarmCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAlarmCoordinator.swift; sourceTree = "<group>"; };
+		2489EBB629C88CF1008EE6DF /* DatePickerHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerHeaderView.swift; sourceTree = "<group>"; };
+		2489EBB829C8E8CC008EE6DF /* RepeatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatTableViewCell.swift; sourceTree = "<group>"; };
+		2489EBBD29C8F8BC008EE6DF /* LabelTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelTableViewCell.swift; sourceTree = "<group>"; };
+		2489EBBF29C8FCEF008EE6DF /* SnoozeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnoozeTableViewCell.swift; sourceTree = "<group>"; };
+		2489EBC229C931AE008EE6DF /* LapTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LapTableViewCell.swift; sourceTree = "<group>"; };
+		2489EBC429C93692008EE6DF /* StopWatchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopWatchViewModel.swift; sourceTree = "<group>"; };
+		24D5D4B829C97FE000C495B8 /* StopWatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopWatch.swift; sourceTree = "<group>"; };
+		24D5D4BD29CA27A100C495B8 /* AlarmTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmTableViewCell.swift; sourceTree = "<group>"; };
+		24D5D4BF29CA3BF100C495B8 /* AddEditAlarmViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditAlarmViewModel.swift; sourceTree = "<group>"; };
+		24D5D4C229CA499000C495B8 /* RepeatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatViewController.swift; sourceTree = "<group>"; };
+		24D5D4C429CA4D9B00C495B8 /* LabelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelViewController.swift; sourceTree = "<group>"; };
+		24D5D4C629CA4DAD00C495B8 /* SoundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundViewController.swift; sourceTree = "<group>"; };
+		24D5D4CA29CA693B00C495B8 /* RepeatViewControllerCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatViewControllerCoordinator.swift; sourceTree = "<group>"; };
+		24D5D4CC29CA694D00C495B8 /* LabelViewControllerCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelViewControllerCoordinator.swift; sourceTree = "<group>"; };
+		24D5D4CE29CA695A00C495B8 /* SoundViewControllerCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundViewControllerCoordinator.swift; sourceTree = "<group>"; };
+		24D5D4D029CB2CF300C495B8 /* TimerViewControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewControllerViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2489EB5C29C68950008EE6DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2489EB7229C68953008EE6DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2489EB7C29C68953008EE6DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2489EB5629C68950008EE6DF = {
+			isa = PBXGroup;
+			children = (
+				2489EB6129C68950008EE6DF /* StopWatch */,
+				2489EB7829C68953008EE6DF /* StopWatchTests */,
+				2489EB8229C68953008EE6DF /* StopWatchUITests */,
+				2489EB6029C68950008EE6DF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2489EB6029C68950008EE6DF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2489EB5F29C68950008EE6DF /* StopWatch.app */,
+				2489EB7529C68953008EE6DF /* StopWatchTests.xctest */,
+				2489EB7F29C68953008EE6DF /* StopWatchUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2489EB6129C68950008EE6DF /* StopWatch */ = {
+			isa = PBXGroup;
+			children = (
+				2489EB6229C68950008EE6DF /* AppDelegate.swift */,
+				2489EB6429C68950008EE6DF /* SceneDelegate.swift */,
+				2489EBAE29C7E326008EE6DF /* Model */,
+				2489EB9829C7760A008EE6DF /* Coordinator */,
+				2489EBC129C93174008EE6DF /* TabBarController */,
+				2489EB9929C77623008EE6DF /* StopWatch */,
+				2489EB9A29C779E0008EE6DF /* Timer */,
+				2489EB9D29C77AE6008EE6DF /* Alarm */,
+				2489EB6B29C68952008EE6DF /* Assets.xcassets */,
+				2489EB6D29C68952008EE6DF /* LaunchScreen.storyboard */,
+				2489EB7029C68952008EE6DF /* Info.plist */,
+			);
+			path = StopWatch;
+			sourceTree = "<group>";
+		};
+		2489EB7829C68953008EE6DF /* StopWatchTests */ = {
+			isa = PBXGroup;
+			children = (
+				2489EB7929C68953008EE6DF /* StopWatchTests.swift */,
+			);
+			path = StopWatchTests;
+			sourceTree = "<group>";
+		};
+		2489EB8229C68953008EE6DF /* StopWatchUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2489EB8329C68953008EE6DF /* StopWatchUITests.swift */,
+				2489EB8529C68953008EE6DF /* StopWatchUITestsLaunchTests.swift */,
+			);
+			path = StopWatchUITests;
+			sourceTree = "<group>";
+		};
+		2489EB9829C7760A008EE6DF /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				2489EB9229C68975008EE6DF /* Coordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		2489EB9929C77623008EE6DF /* StopWatch */ = {
+			isa = PBXGroup;
+			children = (
+				2489EB6629C68950008EE6DF /* StopWatchViewController.swift */,
+				24D5D4BB29CA0E2A00C495B8 /* View */,
+				24D5D4BC29CA0E3700C495B8 /* StopWatchViewModel */,
+				24D5D4BA29CA0E0000C495B8 /* StopWatchCoordinator */,
+			);
+			path = StopWatch;
+			sourceTree = "<group>";
+		};
+		2489EB9A29C779E0008EE6DF /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				2489EB9429C68A1A008EE6DF /* TimerCoordinator.swift */,
+				2489EB9B29C77A18008EE6DF /* TimerViewController.swift */,
+				24D5D4D029CB2CF300C495B8 /* TimerViewControllerViewModel.swift */,
+			);
+			path = Timer;
+			sourceTree = "<group>";
+		};
+		2489EB9D29C77AE6008EE6DF /* Alarm */ = {
+			isa = PBXGroup;
+			children = (
+				2489EBA529C78F91008EE6DF /* AlarmCoordinator.swift */,
+				2489EB9E29C77B07008EE6DF /* AlarmViewController.swift */,
+				2489EBAC29C7E316008EE6DF /* AlarmViewControllerViewModel.swift */,
+				24D5D4BD29CA27A100C495B8 /* AlarmTableViewCell.swift */,
+				2489EBB329C808C4008EE6DF /* AddAlarm */,
+			);
+			path = Alarm;
+			sourceTree = "<group>";
+		};
+		2489EBA029C77B87008EE6DF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2489EBB629C88CF1008EE6DF /* DatePickerHeaderView.swift */,
+				2489EBB829C8E8CC008EE6DF /* RepeatTableViewCell.swift */,
+				2489EBBD29C8F8BC008EE6DF /* LabelTableViewCell.swift */,
+				2489EBBF29C8FCEF008EE6DF /* SnoozeTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2489EBAE29C7E326008EE6DF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2489EBAF29C7E335008EE6DF /* Clock.swift */,
+				24D5D4B829C97FE000C495B8 /* StopWatch.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2489EBB329C808C4008EE6DF /* AddAlarm */ = {
+			isa = PBXGroup;
+			children = (
+				2489EBB129C80313008EE6DF /* AddAlarmViewController.swift */,
+				24D5D4BF29CA3BF100C495B8 /* AddEditAlarmViewModel.swift */,
+				24D5D4C129CA3D9800C495B8 /* Controller */,
+				2489EBBC29C8F86F008EE6DF /* AlarmCoordinator */,
+				2489EBA029C77B87008EE6DF /* View */,
+			);
+			path = AddAlarm;
+			sourceTree = "<group>";
+		};
+		2489EBBC29C8F86F008EE6DF /* AlarmCoordinator */ = {
+			isa = PBXGroup;
+			children = (
+				2489EBB429C808E7008EE6DF /* AddAlarmCoordinator.swift */,
+				24D5D4CA29CA693B00C495B8 /* RepeatViewControllerCoordinator.swift */,
+				24D5D4CC29CA694D00C495B8 /* LabelViewControllerCoordinator.swift */,
+				24D5D4CE29CA695A00C495B8 /* SoundViewControllerCoordinator.swift */,
+			);
+			path = AlarmCoordinator;
+			sourceTree = "<group>";
+		};
+		2489EBC129C93174008EE6DF /* TabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				2489EBA329C782D4008EE6DF /* TabBarViewController.swift */,
+				2489EBA929C7CDF0008EE6DF /* MainCoordinator.swift */,
+			);
+			path = TabBarController;
+			sourceTree = "<group>";
+		};
+		24D5D4BA29CA0E0000C495B8 /* StopWatchCoordinator */ = {
+			isa = PBXGroup;
+			children = (
+				2489EBA729C78FB6008EE6DF /* StopWatchCoordinator.swift */,
+			);
+			path = StopWatchCoordinator;
+			sourceTree = "<group>";
+		};
+		24D5D4BB29CA0E2A00C495B8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2489EBC229C931AE008EE6DF /* LapTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		24D5D4BC29CA0E3700C495B8 /* StopWatchViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				2489EBC429C93692008EE6DF /* StopWatchViewModel.swift */,
+			);
+			path = StopWatchViewModel;
+			sourceTree = "<group>";
+		};
+		24D5D4C129CA3D9800C495B8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				24D5D4C229CA499000C495B8 /* RepeatViewController.swift */,
+				24D5D4C429CA4D9B00C495B8 /* LabelViewController.swift */,
+				24D5D4C629CA4DAD00C495B8 /* SoundViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2489EB5E29C68950008EE6DF /* StopWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2489EB8929C68953008EE6DF /* Build configuration list for PBXNativeTarget "StopWatch" */;
+			buildPhases = (
+				2489EB5B29C68950008EE6DF /* Sources */,
+				2489EB5C29C68950008EE6DF /* Frameworks */,
+				2489EB5D29C68950008EE6DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StopWatch;
+			productName = StopWatch;
+			productReference = 2489EB5F29C68950008EE6DF /* StopWatch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2489EB7429C68953008EE6DF /* StopWatchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2489EB8C29C68953008EE6DF /* Build configuration list for PBXNativeTarget "StopWatchTests" */;
+			buildPhases = (
+				2489EB7129C68953008EE6DF /* Sources */,
+				2489EB7229C68953008EE6DF /* Frameworks */,
+				2489EB7329C68953008EE6DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2489EB7729C68953008EE6DF /* PBXTargetDependency */,
+			);
+			name = StopWatchTests;
+			productName = StopWatchTests;
+			productReference = 2489EB7529C68953008EE6DF /* StopWatchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2489EB7E29C68953008EE6DF /* StopWatchUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2489EB8F29C68953008EE6DF /* Build configuration list for PBXNativeTarget "StopWatchUITests" */;
+			buildPhases = (
+				2489EB7B29C68953008EE6DF /* Sources */,
+				2489EB7C29C68953008EE6DF /* Frameworks */,
+				2489EB7D29C68953008EE6DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2489EB8129C68953008EE6DF /* PBXTargetDependency */,
+			);
+			name = StopWatchUITests;
+			productName = StopWatchUITests;
+			productReference = 2489EB7F29C68953008EE6DF /* StopWatchUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2489EB5729C68950008EE6DF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					2489EB5E29C68950008EE6DF = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					2489EB7429C68953008EE6DF = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 2489EB5E29C68950008EE6DF;
+					};
+					2489EB7E29C68953008EE6DF = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 2489EB5E29C68950008EE6DF;
+					};
+				};
+			};
+			buildConfigurationList = 2489EB5A29C68950008EE6DF /* Build configuration list for PBXProject "StopWatch" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2489EB5629C68950008EE6DF;
+			productRefGroup = 2489EB6029C68950008EE6DF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2489EB5E29C68950008EE6DF /* StopWatch */,
+				2489EB7429C68953008EE6DF /* StopWatchTests */,
+				2489EB7E29C68953008EE6DF /* StopWatchUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2489EB5D29C68950008EE6DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2489EB6F29C68952008EE6DF /* LaunchScreen.storyboard in Resources */,
+				2489EB6C29C68952008EE6DF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2489EB7329C68953008EE6DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2489EB7D29C68953008EE6DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2489EB5B29C68950008EE6DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2489EB9329C68975008EE6DF /* Coordinator.swift in Sources */,
+				24D5D4B929C97FE000C495B8 /* StopWatch.swift in Sources */,
+				2489EBC329C931AE008EE6DF /* LapTableViewCell.swift in Sources */,
+				24D5D4CF29CA695A00C495B8 /* SoundViewControllerCoordinator.swift in Sources */,
+				2489EBAA29C7CDF0008EE6DF /* MainCoordinator.swift in Sources */,
+				2489EBC529C93692008EE6DF /* StopWatchViewModel.swift in Sources */,
+				24D5D4C529CA4D9B00C495B8 /* LabelViewController.swift in Sources */,
+				24D5D4CD29CA694D00C495B8 /* LabelViewControllerCoordinator.swift in Sources */,
+				2489EBB229C80313008EE6DF /* AddAlarmViewController.swift in Sources */,
+				2489EB6729C68950008EE6DF /* StopWatchViewController.swift in Sources */,
+				2489EBB929C8E8CC008EE6DF /* RepeatTableViewCell.swift in Sources */,
+				2489EB6329C68950008EE6DF /* AppDelegate.swift in Sources */,
+				2489EBB729C88CF1008EE6DF /* DatePickerHeaderView.swift in Sources */,
+				2489EBA829C78FB6008EE6DF /* StopWatchCoordinator.swift in Sources */,
+				2489EBB029C7E335008EE6DF /* Clock.swift in Sources */,
+				2489EBC029C8FCEF008EE6DF /* SnoozeTableViewCell.swift in Sources */,
+				2489EBAD29C7E316008EE6DF /* AlarmViewControllerViewModel.swift in Sources */,
+				24D5D4D129CB2CF300C495B8 /* TimerViewControllerViewModel.swift in Sources */,
+				24D5D4BE29CA27A100C495B8 /* AlarmTableViewCell.swift in Sources */,
+				2489EBA629C78F91008EE6DF /* AlarmCoordinator.swift in Sources */,
+				2489EBB529C808E7008EE6DF /* AddAlarmCoordinator.swift in Sources */,
+				2489EBA429C782D4008EE6DF /* TabBarViewController.swift in Sources */,
+				2489EB6529C68950008EE6DF /* SceneDelegate.swift in Sources */,
+				2489EBBE29C8F8BC008EE6DF /* LabelTableViewCell.swift in Sources */,
+				2489EB9C29C77A18008EE6DF /* TimerViewController.swift in Sources */,
+				2489EB9529C68A1A008EE6DF /* TimerCoordinator.swift in Sources */,
+				24D5D4C029CA3BF100C495B8 /* AddEditAlarmViewModel.swift in Sources */,
+				24D5D4CB29CA693B00C495B8 /* RepeatViewControllerCoordinator.swift in Sources */,
+				24D5D4C329CA499000C495B8 /* RepeatViewController.swift in Sources */,
+				24D5D4C729CA4DAD00C495B8 /* SoundViewController.swift in Sources */,
+				2489EB9F29C77B07008EE6DF /* AlarmViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2489EB7129C68953008EE6DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2489EB7A29C68953008EE6DF /* StopWatchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2489EB7B29C68953008EE6DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2489EB8629C68953008EE6DF /* StopWatchUITestsLaunchTests.swift in Sources */,
+				2489EB8429C68953008EE6DF /* StopWatchUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2489EB7729C68953008EE6DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2489EB5E29C68950008EE6DF /* StopWatch */;
+			targetProxy = 2489EB7629C68953008EE6DF /* PBXContainerItemProxy */;
+		};
+		2489EB8129C68953008EE6DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2489EB5E29C68950008EE6DF /* StopWatch */;
+			targetProxy = 2489EB8029C68953008EE6DF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2489EB6D29C68952008EE6DF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2489EB6E29C68952008EE6DF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2489EB8729C68953008EE6DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2489EB8829C68953008EE6DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2489EB8A29C68953008EE6DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DJ4HTA4RKP;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = StopWatch/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ridesharer.RideSharer.StopWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2489EB8B29C68953008EE6DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DJ4HTA4RKP;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = StopWatch/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ridesharer.RideSharer.StopWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2489EB8D29C68953008EE6DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DJ4HTA4RKP;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ridesharer.RideSharer.StopWatchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StopWatch.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/StopWatch";
+			};
+			name = Debug;
+		};
+		2489EB8E29C68953008EE6DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DJ4HTA4RKP;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ridesharer.RideSharer.StopWatchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StopWatch.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/StopWatch";
+			};
+			name = Release;
+		};
+		2489EB9029C68953008EE6DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DJ4HTA4RKP;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ridesharer.RideSharer.StopWatchUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = StopWatch;
+			};
+			name = Debug;
+		};
+		2489EB9129C68953008EE6DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DJ4HTA4RKP;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ridesharer.RideSharer.StopWatchUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = StopWatch;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2489EB5A29C68950008EE6DF /* Build configuration list for PBXProject "StopWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2489EB8729C68953008EE6DF /* Debug */,
+				2489EB8829C68953008EE6DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2489EB8929C68953008EE6DF /* Build configuration list for PBXNativeTarget "StopWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2489EB8A29C68953008EE6DF /* Debug */,
+				2489EB8B29C68953008EE6DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2489EB8C29C68953008EE6DF /* Build configuration list for PBXNativeTarget "StopWatchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2489EB8D29C68953008EE6DF /* Debug */,
+				2489EB8E29C68953008EE6DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2489EB8F29C68953008EE6DF /* Build configuration list for PBXNativeTarget "StopWatchUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2489EB9029C68953008EE6DF /* Debug */,
+				2489EB9129C68953008EE6DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2489EB5729C68950008EE6DF /* Project object */;
+}
