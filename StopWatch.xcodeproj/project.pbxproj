@@ -26,6 +26,23 @@
 		2489EBC529C93692008EE6DF /* StopWatchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2489EBC429C93692008EE6DF /* StopWatchViewModel.swift */; };
 		24D5D4B929C97FE000C495B8 /* StopWatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D5D4B829C97FE000C495B8 /* StopWatch.swift */; };
 		24D5D4D129CB2CF300C495B8 /* TimerViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D5D4D029CB2CF300C495B8 /* TimerViewControllerViewModel.swift */; };
+		24D5D51529CD142500C495B8 /* AlarmCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D5D4FF29CD142400C495B8 /* AlarmCoordinator.swift */; };
+		24D5D51629CD142500C495B8 /* AddAlarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D5D50029CD142400C495B8 /* AddAlarmViewController.swift */; };
+		24D5D51729CD142500C495B8 /* SnoozeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D5D50129CD142400C495B8 /* SnoozeTableViewCell.swift */; };
+		24D5D51829CD142500C495B8 /* LabelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D5D50229CD142400C495B8 /* LabelViewController.swift */; };
+		24D5D51929CD142500C495B8 /* AddAlarmCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D5D50329CD142400C495B8 /* AddAlarmCoordinator.swift */; };
+		24D5D51A29CD142500C495B8 /* AlarmTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D5D50529CD142400C495B8 /* AlarmTableViewCell.swift */; };
+		24D5D51B29CD142500C495B8 /* RepeatViewControllerCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D5D50629CD142400C495B8 /* RepeatViewControllerCoordinator.swift */; };
+		24D5D51C29CD142500C495B8 /* RepeatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D5D50829CD142400C495B8 /* RepeatViewController.swift */; };
+		24D5D51D29CD142500C495B8 /* AlarmViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D5D50929CD142400C495B8 /* AlarmViewControllerViewModel.swift */; };
+		24D5D51E29CD142500C495B8 /* LabelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D5D50A29CD142400C495B8 /* LabelTableViewCell.swift */; };
+		24D5D51F29CD142500C495B8 /* AddEditAlarmViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D5D50C29CD142500C495B8 /* AddEditAlarmViewModel.swift */; };
+		24D5D52029CD142500C495B8 /* LabelViewControllerCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D5D50D29CD142500C495B8 /* LabelViewControllerCoordinator.swift */; };
+		24D5D52129CD142500C495B8 /* AlarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D5D50E29CD142500C495B8 /* AlarmViewController.swift */; };
+		24D5D52229CD142500C495B8 /* RepeatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D5D50F29CD142500C495B8 /* RepeatTableViewCell.swift */; };
+		24D5D52329CD142500C495B8 /* DatePickerHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D5D51129CD142500C495B8 /* DatePickerHeaderView.swift */; };
+		24D5D52429CD142500C495B8 /* SoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D5D51329CD142500C495B8 /* SoundViewController.swift */; };
+		24D5D52529CD142500C495B8 /* SoundViewControllerCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D5D51429CD142500C495B8 /* SoundViewControllerCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +86,23 @@
 		2489EBC429C93692008EE6DF /* StopWatchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopWatchViewModel.swift; sourceTree = "<group>"; };
 		24D5D4B829C97FE000C495B8 /* StopWatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopWatch.swift; sourceTree = "<group>"; };
 		24D5D4D029CB2CF300C495B8 /* TimerViewControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewControllerViewModel.swift; sourceTree = "<group>"; };
+		24D5D4FF29CD142400C495B8 /* AlarmCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmCoordinator.swift; sourceTree = "<group>"; };
+		24D5D50029CD142400C495B8 /* AddAlarmViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddAlarmViewController.swift; sourceTree = "<group>"; };
+		24D5D50129CD142400C495B8 /* SnoozeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnoozeTableViewCell.swift; sourceTree = "<group>"; };
+		24D5D50229CD142400C495B8 /* LabelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelViewController.swift; sourceTree = "<group>"; };
+		24D5D50329CD142400C495B8 /* AddAlarmCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddAlarmCoordinator.swift; sourceTree = "<group>"; };
+		24D5D50529CD142400C495B8 /* AlarmTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmTableViewCell.swift; sourceTree = "<group>"; };
+		24D5D50629CD142400C495B8 /* RepeatViewControllerCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepeatViewControllerCoordinator.swift; sourceTree = "<group>"; };
+		24D5D50829CD142400C495B8 /* RepeatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepeatViewController.swift; sourceTree = "<group>"; };
+		24D5D50929CD142400C495B8 /* AlarmViewControllerViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmViewControllerViewModel.swift; sourceTree = "<group>"; };
+		24D5D50A29CD142400C495B8 /* LabelTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelTableViewCell.swift; sourceTree = "<group>"; };
+		24D5D50C29CD142500C495B8 /* AddEditAlarmViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddEditAlarmViewModel.swift; sourceTree = "<group>"; };
+		24D5D50D29CD142500C495B8 /* LabelViewControllerCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelViewControllerCoordinator.swift; sourceTree = "<group>"; };
+		24D5D50E29CD142500C495B8 /* AlarmViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmViewController.swift; sourceTree = "<group>"; };
+		24D5D50F29CD142500C495B8 /* RepeatTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepeatTableViewCell.swift; sourceTree = "<group>"; };
+		24D5D51129CD142500C495B8 /* DatePickerHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerHeaderView.swift; sourceTree = "<group>"; };
+		24D5D51329CD142500C495B8 /* SoundViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundViewController.swift; sourceTree = "<group>"; };
+		24D5D51429CD142500C495B8 /* SoundViewControllerCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundViewControllerCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +160,7 @@
 				2489EBC129C93174008EE6DF /* TabBarController */,
 				2489EB9929C77623008EE6DF /* StopWatch */,
 				2489EB9A29C779E0008EE6DF /* Timer */,
+				24D5D50B29CD142400C495B8 /* Alarm */,
 				2489EB6B29C68952008EE6DF /* Assets.xcassets */,
 				2489EB6D29C68952008EE6DF /* LaunchScreen.storyboard */,
 				2489EB7029C68952008EE6DF /* Info.plist */,
@@ -219,6 +254,63 @@
 				2489EBC429C93692008EE6DF /* StopWatchViewModel.swift */,
 			);
 			path = StopWatchViewModel;
+			sourceTree = "<group>";
+		};
+		24D5D50429CD142400C495B8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				24D5D50A29CD142400C495B8 /* LabelTableViewCell.swift */,
+				24D5D50129CD142400C495B8 /* SnoozeTableViewCell.swift */,
+				24D5D50F29CD142500C495B8 /* RepeatTableViewCell.swift */,
+				24D5D50529CD142400C495B8 /* AlarmTableViewCell.swift */,
+				24D5D51129CD142500C495B8 /* DatePickerHeaderView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		24D5D50729CD142400C495B8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				24D5D50829CD142400C495B8 /* RepeatViewController.swift */,
+				24D5D51329CD142500C495B8 /* SoundViewController.swift */,
+				24D5D50229CD142400C495B8 /* LabelViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		24D5D50B29CD142400C495B8 /* Alarm */ = {
+			isa = PBXGroup;
+			children = (
+				24D5D50929CD142400C495B8 /* AlarmViewControllerViewModel.swift */,
+				24D5D50E29CD142500C495B8 /* AlarmViewController.swift */,
+				24D5D51229CD142500C495B8 /* AlarmCoordinator */,
+				24D5D51029CD142500C495B8 /* AddAlarm */,
+				24D5D50429CD142400C495B8 /* View */,
+				24D5D50729CD142400C495B8 /* Controller */,
+			);
+			name = Alarm;
+			path = ../../../../../.Trash/Alarm;
+			sourceTree = "<group>";
+		};
+		24D5D51029CD142500C495B8 /* AddAlarm */ = {
+			isa = PBXGroup;
+			children = (
+				24D5D50029CD142400C495B8 /* AddAlarmViewController.swift */,
+				24D5D50C29CD142500C495B8 /* AddEditAlarmViewModel.swift */,
+			);
+			path = AddAlarm;
+			sourceTree = "<group>";
+		};
+		24D5D51229CD142500C495B8 /* AlarmCoordinator */ = {
+			isa = PBXGroup;
+			children = (
+				24D5D50D29CD142500C495B8 /* LabelViewControllerCoordinator.swift */,
+				24D5D50629CD142400C495B8 /* RepeatViewControllerCoordinator.swift */,
+				24D5D50329CD142400C495B8 /* AddAlarmCoordinator.swift */,
+				24D5D51429CD142500C495B8 /* SoundViewControllerCoordinator.swift */,
+				24D5D4FF29CD142400C495B8 /* AlarmCoordinator.swift */,
+			);
+			path = AlarmCoordinator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -351,18 +443,35 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24D5D51729CD142500C495B8 /* SnoozeTableViewCell.swift in Sources */,
+				24D5D51929CD142500C495B8 /* AddAlarmCoordinator.swift in Sources */,
+				24D5D51F29CD142500C495B8 /* AddEditAlarmViewModel.swift in Sources */,
 				2489EB9329C68975008EE6DF /* Coordinator.swift in Sources */,
+				24D5D52429CD142500C495B8 /* SoundViewController.swift in Sources */,
+				24D5D51B29CD142500C495B8 /* RepeatViewControllerCoordinator.swift in Sources */,
+				24D5D52129CD142500C495B8 /* AlarmViewController.swift in Sources */,
 				24D5D4B929C97FE000C495B8 /* StopWatch.swift in Sources */,
+				24D5D52529CD142500C495B8 /* SoundViewControllerCoordinator.swift in Sources */,
 				2489EBC329C931AE008EE6DF /* LapTableViewCell.swift in Sources */,
 				2489EBAA29C7CDF0008EE6DF /* MainCoordinator.swift in Sources */,
+				24D5D52029CD142500C495B8 /* LabelViewControllerCoordinator.swift in Sources */,
+				24D5D51829CD142500C495B8 /* LabelViewController.swift in Sources */,
 				2489EBC529C93692008EE6DF /* StopWatchViewModel.swift in Sources */,
 				2489EB6729C68950008EE6DF /* StopWatchViewController.swift in Sources */,
 				2489EB6329C68950008EE6DF /* AppDelegate.swift in Sources */,
 				2489EBA829C78FB6008EE6DF /* StopWatchCoordinator.swift in Sources */,
 				2489EBB029C7E335008EE6DF /* Clock.swift in Sources */,
+				24D5D52329CD142500C495B8 /* DatePickerHeaderView.swift in Sources */,
+				24D5D52229CD142500C495B8 /* RepeatTableViewCell.swift in Sources */,
+				24D5D51529CD142500C495B8 /* AlarmCoordinator.swift in Sources */,
+				24D5D51E29CD142500C495B8 /* LabelTableViewCell.swift in Sources */,
 				24D5D4D129CB2CF300C495B8 /* TimerViewControllerViewModel.swift in Sources */,
+				24D5D51D29CD142500C495B8 /* AlarmViewControllerViewModel.swift in Sources */,
 				2489EBA429C782D4008EE6DF /* TabBarViewController.swift in Sources */,
+				24D5D51A29CD142500C495B8 /* AlarmTableViewCell.swift in Sources */,
+				24D5D51629CD142500C495B8 /* AddAlarmViewController.swift in Sources */,
 				2489EB6529C68950008EE6DF /* SceneDelegate.swift in Sources */,
+				24D5D51C29CD142500C495B8 /* RepeatViewController.swift in Sources */,
 				2489EB9C29C77A18008EE6DF /* TimerViewController.swift in Sources */,
 				2489EB9529C68A1A008EE6DF /* TimerCoordinator.swift in Sources */,
 			);
