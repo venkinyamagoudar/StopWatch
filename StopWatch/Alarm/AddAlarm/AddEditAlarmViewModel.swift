@@ -9,11 +9,12 @@ import Foundation
 
 class AddEditAlarmViewModel{
     
-    var newAlarm: Alarm
+    var newAlarm: Alarm!
     
-    init() {
-        self.newAlarm = Alarm(label: "",sound: "",repeatation: .noRepeat,snooze: false, time: Date())
+    func saveButtonPressed() -> Alarm {
+        return newAlarm
     }
     
-    
 }
+
+

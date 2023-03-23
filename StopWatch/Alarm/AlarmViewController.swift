@@ -15,7 +15,7 @@ class AlarmViewController: UIViewController {
     
     var containerView: UIView = {
         let view = UIView()
-        view.backgroundColor = .green
+        view.backgroundColor = .systemBackground
         view.translatesAutoresizingMaskIntoConstraints = false
         view.sizeToFit()
         return view
@@ -40,8 +40,6 @@ class AlarmViewController: UIViewController {
         constraints.append(containerView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor))
         constraints.append(containerView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor))
         
-//        alarmTableView.frame = CGRect(x: 16, y: 8, width: containerView.frame.width - 32 , height: containerView.frame.height - 16)
-        
         constraints.append(alarmTableView.leadingAnchor.constraint(equalTo: containerView.leadingAnchor, constant: 8))
         constraints.append(alarmTableView.topAnchor.constraint(equalTo: containerView.topAnchor, constant: 8))
         constraints.append(alarmTableView.widthAnchor.constraint(equalTo: containerView.widthAnchor, constant: -16))
@@ -54,7 +52,7 @@ class AlarmViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Alarm"
-        view.backgroundColor  = .blue
+        view.backgroundColor  = .systemBackground
         view.addSubview(containerView)
         containerView.addSubview(alarmTableView)
         

@@ -11,6 +11,7 @@ class TimerViewController: UIViewController {
     
     var viewModel = TimerViewControllerViewModel()
     
+    
     var containerView: UIView = {
         let view = UIView()
         view.backgroundColor = .secondarySystemBackground
@@ -31,10 +32,11 @@ class TimerViewController: UIViewController {
         var time = UIDatePicker()
         time.preferredDatePickerStyle = .wheels
         time.datePickerMode = .countDownTimer
+        time.calendar = Calendar.current
+        time.locale = Locale.current
         time.minuteInterval = 1
         time.backgroundColor = .secondarySystemBackground
         time.translatesAutoresizingMaskIntoConstraints = false
-//        time.addTarget(self, action: #selector(datePickerRolled), for: .touchUpInside)
         return time
     }()
     
@@ -148,7 +150,7 @@ class TimerViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Timer"
-        view.backgroundColor  = .yellow
+        view.backgroundColor  = .systemBackground
         
         view.addSubview(containerView)
         containerView.addSubview(timerContainerView)
@@ -171,19 +173,11 @@ class TimerViewController: UIViewController {
     }
     
     @objc func startStopButtonPressed() {
-        if viewModel.isTimerOn {
-            startButton.setTitleColor(.green, for: .normal)
-            startButton.setTitle("Resume", for: .normal)
-        } else {
-            if viewModel.totalTime == viewModel.beginTime {
-                startButton.setTitleColor(.orange, for: .normal)
-                startButton.setTitle("Pause", for: .normal)
-                updateUI()
-            }else {
-                startButton.setTitleColor(.orange, for: .normal)
-                startButton.setTitle("Pause", for: .normal)
-            }
-        }
+        viewModel.startButtonPressed()
+        updateVisibility()
+    }
+    
+    func updateVisibility() {
         cancelButton.isEnabled = true
     }
     

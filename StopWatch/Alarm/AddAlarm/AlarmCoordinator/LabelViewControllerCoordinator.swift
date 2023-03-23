@@ -18,6 +18,7 @@ class LabelViewControllerCoordinator: Coordinator {
     
     func start() {
         let vc = LabelViewController()
+        vc.delegate = self
         vc.coordinator = self
         navigationController.pushViewController(vc, animated: true)
     }
@@ -30,4 +31,10 @@ class LabelViewControllerCoordinator: Coordinator {
         parentCoordinator?.childDidFinish(self)
     }
     
+}
+
+extension LabelViewControllerCoordinator: LabelViewControllerDelegate {
+    func getTextFieldText(with text: String) {
+        parentCoordinator?.getTextFieldText(with: text)
+    }
 }

@@ -17,6 +17,7 @@ class StopWatchCoordinator: Coordinator {
 
     func start() {
         let vc = StopWatchViewController()
+        navigationController.navigationBar.backgroundColor = .systemBackground
         navigationController.pushViewController(vc, animated: false)
     }
 }

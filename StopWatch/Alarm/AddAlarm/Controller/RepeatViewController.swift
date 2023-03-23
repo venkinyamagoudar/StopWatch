@@ -7,13 +7,18 @@
 
 import UIKit
 
+protocol RepeatViewControllerDelegate {
+    
+}
+
 class RepeatViewController: UIViewController {
     
     weak var coordinator: RepeatViewControllerCoordinator?
+    var weekdays: Alarm.DayOfWeek!
     
     var containerView: UIView = {
         let view = UIView()
-        view.backgroundColor = .green
+        view.backgroundColor = .secondarySystemBackground
         view.translatesAutoresizingMaskIntoConstraints = false
         view.sizeToFit()
         return view
@@ -73,17 +78,19 @@ extension RepeatViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return Repeatation.allCases.count
+        return Alarm.DayOfWeek.allCases.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CellId", for: indexPath)
-        cell.textLabel?.text = "monday"
+        cell.textLabel?.text = String(Alarm.DayOfWeek.allCases[indexPath.row].rawValue)
+        cell.accessoryType = indexPath.contains(indexPath) ? .checkmark : .none
         cell.backgroundColor = .secondarySystemBackground
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-            
+        //var cell = tableView.cellForRow(at: indexPath)
+        
     }
 }

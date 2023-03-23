@@ -11,7 +11,7 @@ class SoundViewController: UIViewController {
     
     var containerView: UIView = {
         let view = UIView()
-        view.backgroundColor = .green
+        view.backgroundColor = .secondarySystemBackground
         view.translatesAutoresizingMaskIntoConstraints = false
         view.sizeToFit()
         return view

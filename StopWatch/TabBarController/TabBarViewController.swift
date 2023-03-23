@@ -18,11 +18,9 @@ class TabBarViewController: UITabBarController {
         stopWatchCoordinator.start()
         alarmWatchCoordinator.start()
         timerWatchCoordinator.start()
-
         
-        //UITabBar.appearance().barTintColor = .red
         self.tabBar.barTintColor = .red
-        self.tabBar.backgroundColor = .green
+        self.tabBar.backgroundColor = .systemBackground
         tabBar.tintColor = .label
         setupVCs()
     }

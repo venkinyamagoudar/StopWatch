@@ -7,31 +7,29 @@
 
 import Foundation
 
-
-enum Repeatation: CaseIterable,Codable {
-    case everySunday
-    case everyMonday
-    case everyTuesday
-    case everyWednesday
-    case everyThursday
-    case everyFriday
-    case everySaturday
-    case noRepeat
-    case everyDay
-}
-
 struct Alarm {
-    var label: String
-    var sound: String
-    var repeatation: Repeatation
-    var snooze: Bool
+    var id: UUID
     var time: Date
+    var days: [DayOfWeek]
+    var label: String
+    var sound: AlarmSound
+    var enabled: Bool
     
-    init(label: String, sound: String, repeatation: Repeatation, snooze: Bool,time: Date) {
+    enum DayOfWeek: Int, CaseIterable {
+        case sunday = 1, monday, tuesday, wednesday, thursday, friday, saturday
+    }
+    
+    enum AlarmSound {
+        case defaultSound
+        case customSound(name: String, url: URL)
+    }
+    
+    init(id: UUID, time: Date, days: [DayOfWeek], label: String, sound: AlarmSound, enabled: Bool) {
+        self.id = id
+        self.time = time
+        self.days = days
         self.label = label
         self.sound = sound
-        self.repeatation = repeatation
-        self.snooze = snooze
-        self.time = time
+        self.enabled = enabled
     }
 }

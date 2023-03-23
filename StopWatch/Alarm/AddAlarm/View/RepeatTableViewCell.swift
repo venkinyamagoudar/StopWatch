@@ -11,7 +11,6 @@ class RepeatTableViewCell: UITableViewCell {
     
     static var identifier = "RepeatTableViewCell"
     
-    // this will make sure its children do not go out of the boundary
     let containerView:UIView = {
       let view = UIView()
       view.translatesAutoresizingMaskIntoConstraints = false

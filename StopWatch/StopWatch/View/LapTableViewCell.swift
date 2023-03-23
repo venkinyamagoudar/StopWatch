@@ -11,7 +11,6 @@ class LapTableViewCell: UITableViewCell {
 
     static var identifier = "LabelTableViewCell"
     
-    // this will make sure its children do not go out of the boundary
     let containerView:UIView = {
       let view = UIView()
       view.translatesAutoresizingMaskIntoConstraints = false
@@ -24,7 +23,7 @@ class LapTableViewCell: UITableViewCell {
         label.translatesAutoresizingMaskIntoConstraints = false
         label.text = "Lap 1"
         label.font = UIFont(name: "System", size: CGFloat(20))
-        label.backgroundColor = .systemBackground
+        label.backgroundColor = .clear
         return label
     }()
     
@@ -33,7 +32,7 @@ class LapTableViewCell: UITableViewCell {
         label.translatesAutoresizingMaskIntoConstraints = false
         label.text = "00:00:00"
         label.font = UIFont(name: "System", size: CGFloat(20))
-        label.backgroundColor = .systemBackground
+        label.backgroundColor = .clear
         return label
     }()
 

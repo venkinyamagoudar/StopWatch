@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import AVFoundation
+import AudioToolbox
 
 protocol TimerViewControllerViewModelDelegate:AnyObject {
     func updateTimerLabel(with timeString: String)
@@ -18,7 +20,6 @@ protocol TimerViewControllerViewModelDelegate:AnyObject {
 class TimerViewControllerViewModel {
     var countdownTimer: Timer!
     var totalTime:Int!
-    let circleLayer = CAShapeLayer()
     var isTimerOn: Bool = false
     var beginTime: Int!
     
@@ -28,28 +29,24 @@ class TimerViewControllerViewModel {
         if isTimerOn {
             isTimerOn = false
             countdownTimer.invalidate()
-//            startButton.setTitleColor(.green, for: .normal)
-//            startButton.setTitle("Resume", for: .normal)
+            delagate?.updateStartButton(with: "Resume", and: .green)
         } else {
             isTimerOn = true
             if totalTime == beginTime {
                 startCountdownTimer()
-//                startButton.setTitleColor(.orange, for: .normal)
-//                startButton.setTitle("Pause", for: .normal)
-//                updateUI()
+                delagate?.updateStartButton(with: "Resume", and: .green)
+                delagate?.updateUI()
             }else {
-//                startButton.setTitleColor(.orange, for: .normal)
-//                startButton.setTitle("Pause", for: .normal)
+                delagate?.updateStartButton(with: "Pause", and: .orange)
                 resumeCountDownTime()
             }
         }
-//        cancelButton.isEnabled = true
     }
     
     func startCountdownTimer() {
+        countdownTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(updateTimer), userInfo: nil, repeats: true)
         totalTime = convertTimeInSeconds()
         beginTime = totalTime
-        countdownTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(updateTimer), userInfo: nil, repeats: true)
     }
     
     
@@ -64,21 +61,25 @@ class TimerViewControllerViewModel {
             let minutes = (totalTime % 3600) / 60
             let seconds = (totalTime % 3600) % 60
             if hours == 0{
-//                timerLabel.text = String(format: "%02d:%02d", minutes, seconds)
+                delagate?.updateTimerLabel(with: String(format: "%02d:%02d", minutes, seconds))
             } else {
-//                timerLabel.text = String(format: "%02d:%02d:%02d", hours, minutes, seconds)
+                delagate?.updateTimerLabel(with: String(format: "%02d:%02d:%02d", hours, minutes, seconds))
             }
         } else {
+            let systemSoundID: SystemSoundID = 1005
+            AudioServicesPlaySystemSound(systemSoundID)
+            AudioServicesPlayAlertSound(systemSoundID)
             endTimer()
         }
     }
     
     func endTimer() {
         countdownTimer.invalidate()
-//        timerLabel.text = "00:00:00"
+        delagate?.updateTimerLabel(with: "00:00:00")
         totalTime = 0
         isTimerOn = false
         beginTime = 0
+        delagate?.updateUI()
     }
     
     func convertTimeInSeconds() -> Int {
@@ -96,9 +97,7 @@ class TimerViewControllerViewModel {
     }
     
     func cancelButtonPressed() {
-//        startButton.setTitleColor(.green, for: .normal)
-//        startButton.setTitle("Start", for: .normal)
+        delagate?.updateStartButton(with: "Start", and: .green)
         endTimer()
-//        updateUI()
     }
 }

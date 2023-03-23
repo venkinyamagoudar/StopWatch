@@ -27,8 +27,8 @@ class AlarmTableViewCell: UITableViewCell {
         stackView.translatesAutoresizingMaskIntoConstraints = false
         stackView.alignment = .fill
         stackView.distribution = .fillEqually
-        stackView.spacing = 10 // Set the spacing between the views
-        stackView.backgroundColor = .green
+        stackView.spacing = 10 
+        stackView.backgroundColor = .secondarySystemBackground
         return stackView
     }()
     

@@ -14,8 +14,12 @@ class AlarmViewControllerViewModel {
         alarmArray = [Alarm]()
     }
     
-    func addAlarm(label: String, sound: String, repeatation: Repeatation, snooze: Bool) {
-        let newAlarm = Alarm(label: label, sound: sound, repeatation: repeatation, snooze: snooze, time: Date())
-        alarmArray.append(newAlarm)
+    func addAlarm() {
+//        let newAlarm = 
+//        alarmArray.append(newAlarm)
+    }
+    
+    func deleteAlaram(at indexPath: IndexPath) {
+        alarmArray.remove(at: indexPath.row)
     }
 }

@@ -7,6 +7,10 @@
 
 import UIKit
 
+protocol LabelViewControllerDelegate {
+    func getTextFieldText(with text: String)
+}
+
 class LabelViewController: UIViewController {
     
     weak var coordinator: LabelViewControllerCoordinator?
@@ -22,7 +26,7 @@ class LabelViewController: UIViewController {
         return textField
     }()
     
-    var text: String!
+    var delegate: LabelViewControllerDelegate?
     
     func setUpConstraints() {
         
@@ -55,6 +59,7 @@ class LabelViewController: UIViewController {
 
 extension LabelViewController: UITextFieldDelegate {
     func textFieldDidEndEditing(_ textField: UITextField) {
-        text = textField.text
+        guard let text = textField.text else {return}
+        delegate?.getTextFieldText(with: text)
     }
 }

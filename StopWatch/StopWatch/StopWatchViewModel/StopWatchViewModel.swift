@@ -7,6 +7,7 @@
 
 import Foundation
 
+
 protocol StopWatchViewModelDelegate: AnyObject {
     func updateTimerLabel(with timeString: String)
     func updateLapTableView()
@@ -76,7 +77,7 @@ class StopWatchViewModel {
         let minutes = Int(elapsedTime / 60) % 60
         let seconds = Int(elapsedTime) % 60
         let fractions = Int((elapsedTime.truncatingRemainder(dividingBy: 1)) * 100)
-        let timeString = String(format: "%02d:%02d.%02d", minutes, seconds, fractions)
+        let timeString = String(format: "%02d:%02d:%02d", minutes, seconds, fractions)
         return timeString
     }
 

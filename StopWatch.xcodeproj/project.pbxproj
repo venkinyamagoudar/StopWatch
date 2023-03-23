@@ -251,8 +251,8 @@
 			children = (
 				2489EBB129C80313008EE6DF /* AddAlarmViewController.swift */,
 				24D5D4BF29CA3BF100C495B8 /* AddEditAlarmViewModel.swift */,
-				24D5D4C129CA3D9800C495B8 /* Controller */,
 				2489EBBC29C8F86F008EE6DF /* AlarmCoordinator */,
+				24D5D4C129CA3D9800C495B8 /* Controller */,
 				2489EBA029C77B87008EE6DF /* View */,
 			);
 			path = AddAlarm;

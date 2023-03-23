@@ -88,7 +88,6 @@ class StopWatchViewController: UIViewController{
     
     var startButton: UIButton = {
         let button = UIButton(type: .custom)
-//        button.layer.cornerRadius = 0.5 * button.bounds.size.width
         button.clipsToBounds = true
         button.setTitle("Start", for: .normal)
         button.translatesAutoresizingMaskIntoConstraints = false
@@ -163,8 +162,8 @@ class StopWatchViewController: UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        view.backgroundColor = .secondarySystemBackground
+        
+        view.backgroundColor = .systemBackground
         title = "Stop Watch"
         
         stopWatchTableview.delegate = self
@@ -212,6 +211,10 @@ extension StopWatchViewController: UITableViewDelegate, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: LapTableViewCell.identifier, for: indexPath) as! LapTableViewCell
         cell.configure(with: indexPath.row, and: viewModel.lapArray[indexPath.row])
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 }
 

@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class DatePickerHeaderView: UITableViewHeaderFooterView {
+class DatePickerHeaderView: UITableViewHeaderFooterView {
     
     static let identifier = "DatePickerHeaderView"
     
@@ -26,7 +26,6 @@ final class DatePickerHeaderView: UITableViewHeaderFooterView {
         time.minuteInterval = 1
         time.backgroundColor = .secondarySystemBackground
         time.translatesAutoresizingMaskIntoConstraints = false
-//        time.addTarget(self, action: #selector(datePickerRolled), for: .touchUpInside)
         return time
     }()
     
@@ -59,8 +58,4 @@ final class DatePickerHeaderView: UITableViewHeaderFooterView {
         //Activate Constraints
         NSLayoutConstraint.activate(constraints)
     }
-    
-//    @objc func datePickerRolled() {
-//        selectedTime = time.date
-//    }
 }

@@ -12,6 +12,11 @@ class AddAlarmViewController: UIViewController {
     weak var coordinator: AddAlarmCoordinator?
     var viewModel = AddEditAlarmViewModel()
     
+    var date:Date!
+    var label: String!
+    var repeatDays = [Int]()
+
+    
     var addAlarmTableView: UITableView = {
         let tableView = UITableView()
         tableView.translatesAutoresizingMaskIntoConstraints = false
@@ -24,7 +29,7 @@ class AddAlarmViewController: UIViewController {
     
     var containerView: UIView = {
         let view = UIView()
-        view.backgroundColor = .green
+        view.backgroundColor = .secondarySystemBackground
         view.translatesAutoresizingMaskIntoConstraints = false
         view.sizeToFit()
         return view
@@ -94,6 +99,7 @@ extension AddAlarmViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let header = tableView.dequeueReusableHeaderFooterView(withIdentifier: DatePickerHeaderView.identifier) as! DatePickerHeaderView
+        date = header.time.date
         return header
     }
     
@@ -144,5 +150,29 @@ extension AddAlarmViewController: UITableViewDelegate, UITableViewDataSource {
         default:
             break
         }
+    }
+    
+    
+    func getValues() {
+        let date = getDateFromDatePicker()
+        let repeatDays = getRepeatDays()
+        let label = getLabelFromTextField()
+        let sound = getSoundFromSoundList()
+    }
+    
+    func getDateFromDatePicker() {
+        
+    }
+    
+    func getRepeatDays() {
+        
+    }
+    
+    func getLabelFromTextField() {
+        
+    }
+    
+    func getSoundFromSoundList() {
+        
     }
 }
