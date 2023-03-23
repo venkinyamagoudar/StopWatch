@@ -73,7 +73,7 @@ class StopWatchViewModel {
     }
 
     private func timeString() -> String {
-        let hours = Int(elapsedTime / 3600)
+//        let hours = Int(elapsedTime / 3600)
         let minutes = Int(elapsedTime / 60) % 60
         let seconds = Int(elapsedTime) % 60
         let fractions = Int((elapsedTime.truncatingRemainder(dividingBy: 1)) * 100)

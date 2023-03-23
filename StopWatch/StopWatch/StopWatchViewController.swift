@@ -9,7 +9,7 @@ import UIKit
 
 class StopWatchViewController: UIViewController{
     
-    weak var coordinator: AddAlarmCoordinator?
+    
     
     var viewModel = StopWatchViewModel()
     
