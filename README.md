@@ -15,8 +15,8 @@ Stopwatch is a simple iOS application developed using Swift and UIKit. It provid
 
 ## Requirements
 
-- iOS 14.0+
-- Xcode 14.0+
+- iOS 14.0+ 📱
+- Xcode 14.0+ 🛠️
 - Swift 5.0+
 
 ## Installation
