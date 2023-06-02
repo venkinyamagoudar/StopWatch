@@ -1,12 +1,18 @@
 # Stopwatch
 
-Stopwatch is a simple iOS application developed using Swift and UIKit. It provides a stopwatch functionality to measure elapsed time accurately. The project follows the MVVM-C (Model-View-ViewModel-Coordinator) design pattern for a clean and maintainable architecture.
+Stopwatch and Timer are simple iOS applications developed using Swift and UIKit. They provide stopwatch and timer functionalities to measure elapsed time accurately. The projects follow the MVVM-C (Model-View-ViewModel-Coordinator) design pattern for clean and maintainable architectures.
 
 ## Features
 
+Stopwatch:
 - Start, pause, and reset the stopwatch.
 - Accurate measurement of elapsed time.
 - User-friendly interface with intuitive controls.
+
+Timer:
+- Set a specific countdown duration.
+- Start, pause, and reset the timer.
+- Alert notification when the timer reaches zero.
 
 ## Screenshots
 
